@@ -1,6 +1,6 @@
 package fuzs.armorstatues.fabric;
 
-import fuzs.armorstatues.ArmorStatues;
+import fuzs.armorstatues.common.ArmorStatues;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import net.fabricmc.api.ModInitializer;
 
