@@ -1,7 +1,7 @@
 package fuzs.armorstatues.client.handler;
 
-import fuzs.statuemenus.api.v1.client.gui.screens.StatueScreen;
-import fuzs.statuemenus.api.v1.network.client.data.DataSyncHandler;
+import fuzs.statuemenus.common.api.v1.client.gui.screens.StatueScreen;
+import fuzs.statuemenus.common.api.v1.network.client.data.DataSyncHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import org.jspecify.annotations.Nullable;

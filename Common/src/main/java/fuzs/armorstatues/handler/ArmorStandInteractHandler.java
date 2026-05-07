@@ -4,10 +4,10 @@ import fuzs.armorstatues.ArmorStatues;
 import fuzs.armorstatues.init.ModRegistry;
 import fuzs.armorstatues.proxy.Proxy;
 import fuzs.armorstatues.world.entity.decoration.ArmorStandStatueImpl;
-import fuzs.puzzleslib.api.event.v1.core.EventResultHolder;
-import fuzs.puzzleslib.api.network.v4.NetworkingHelper;
-import fuzs.statuemenus.api.v1.helper.ArmorStandInteractHelper;
-import fuzs.statuemenus.api.v1.world.entity.decoration.StatueEntity;
+import fuzs.puzzleslib.common.api.event.v1.core.EventResultHolder;
+import fuzs.puzzleslib.common.api.network.v4.NetworkingHelper;
+import fuzs.statuemenus.common.api.v1.helper.ArmorStandInteractHelper;
+import fuzs.statuemenus.common.api.v1.world.entity.decoration.StatueEntity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -20,7 +20,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class ArmorStandInteractHandler {
 
-    public static EventResultHolder<InteractionResult> onUseEntityAt(Player player, Level level, InteractionHand interactionHand, Entity entity, Vec3 hitVector) {
+    public static EventResultHolder<InteractionResult> onUseEntity(Player player, Level level, InteractionHand interactionHand, Entity entity, Vec3 hitVector) {
         if (entity.getType() == EntityType.ARMOR_STAND && entity instanceof ArmorStand armorStand) {
             boolean clientsideOnly =
                     level.isClientSide() && !NetworkingHelper.isModPresentServerside(ArmorStatues.MOD_ID);

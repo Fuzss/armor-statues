@@ -1,12 +1,12 @@
 package fuzs.armorstatues.client.gui.screens.armorstand;
 
 import fuzs.armorstatues.world.inventory.data.ArmorStandScreenTypes;
-import fuzs.statuemenus.api.v1.client.gui.screens.StatueButtonsScreen;
-import fuzs.statuemenus.api.v1.client.gui.screens.StatuePositionScreen;
-import fuzs.statuemenus.api.v1.network.client.data.DataSyncHandler;
-import fuzs.statuemenus.api.v1.world.inventory.StatueHolder;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueAlignment;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueScreenType;
+import fuzs.statuemenus.common.api.v1.client.gui.screens.StatueButtonsScreen;
+import fuzs.statuemenus.common.api.v1.client.gui.screens.StatuePositionScreen;
+import fuzs.statuemenus.common.api.v1.network.client.data.DataSyncHandler;
+import fuzs.statuemenus.common.api.v1.world.inventory.StatueHolder;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueAlignment;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueScreenType;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;

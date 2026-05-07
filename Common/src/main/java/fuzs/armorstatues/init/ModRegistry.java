@@ -2,8 +2,8 @@ package fuzs.armorstatues.init;
 
 import fuzs.armorstatues.ArmorStatues;
 import fuzs.armorstatues.world.entity.decoration.ArmorStandStatueImpl;
-import fuzs.puzzleslib.api.init.v3.registry.RegistryManager;
-import fuzs.statuemenus.api.v1.world.inventory.StatueMenu;
+import fuzs.puzzleslib.common.api.init.v3.registry.RegistryManager;
+import fuzs.statuemenus.common.api.v1.world.inventory.StatueMenu;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Inventory;

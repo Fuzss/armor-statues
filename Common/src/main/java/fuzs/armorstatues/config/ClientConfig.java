@@ -1,8 +1,8 @@
 package fuzs.armorstatues.config;
 
-import fuzs.puzzleslib.api.config.v3.Config;
-import fuzs.puzzleslib.api.config.v3.ConfigCore;
-import fuzs.statuemenus.api.v1.client.gui.screens.AbstractStatueScreen;
+import fuzs.puzzleslib.common.api.config.v3.Config;
+import fuzs.puzzleslib.common.api.config.v3.ConfigCore;
+import fuzs.statuemenus.common.api.v1.client.gui.screens.AbstractStatueScreen;
 
 public class ClientConfig implements ConfigCore {
     @Config(description = {

@@ -1,8 +1,8 @@
 package fuzs.armorstatues.client.handler;
 
 import fuzs.armorstatues.handler.ArmorStandInteractHandler;
-import fuzs.puzzleslib.api.event.v1.core.EventResult;
-import fuzs.puzzleslib.api.event.v1.core.EventResultHolder;
+import fuzs.puzzleslib.common.api.event.v1.core.EventResult;
+import fuzs.puzzleslib.common.api.event.v1.core.EventResultHolder;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
@@ -20,7 +20,7 @@ public class ClientInteractHandler {
 
             Entity entity = ((EntityHitResult) hitResult).getEntity();
             Vec3 hitVector = hitResult.getLocation().subtract(entity.getX(), entity.getY(), entity.getZ());
-            EventResultHolder<InteractionResult> result = ArmorStandInteractHandler.onUseEntityAt(minecraft.player,
+            EventResultHolder<InteractionResult> result = ArmorStandInteractHandler.onUseEntity(minecraft.player,
                     minecraft.level,
                     interactionHand,
                     entity,

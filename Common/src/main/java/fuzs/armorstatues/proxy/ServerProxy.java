@@ -1,6 +1,6 @@
 package fuzs.armorstatues.proxy;
 
-import fuzs.statuemenus.api.v1.world.entity.decoration.StatueEntity;
+import fuzs.statuemenus.common.api.v1.world.entity.decoration.StatueEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 

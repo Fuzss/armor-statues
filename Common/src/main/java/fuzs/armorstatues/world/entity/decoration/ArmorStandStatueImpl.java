@@ -1,8 +1,8 @@
 package fuzs.armorstatues.world.entity.decoration;
 
 import fuzs.armorstatues.world.inventory.data.ArmorStandScreenTypes;
-import fuzs.statuemenus.api.v1.world.entity.decoration.ArmorStandStatue;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueScreenType;
+import fuzs.statuemenus.common.api.v1.world.entity.decoration.ArmorStandStatue;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueScreenType;
 import net.minecraft.world.entity.decoration.ArmorStand;
 
 import java.util.List;

@@ -2,11 +2,11 @@ package fuzs.armorstatues.client.gui.screens.armorstand;
 
 import fuzs.armorstatues.network.client.data.CommandDataSyncHandler;
 import fuzs.armorstatues.world.inventory.data.ArmorStandScreenTypes;
-import fuzs.statuemenus.api.v1.client.gui.screens.StatuePositionScreen;
-import fuzs.statuemenus.api.v1.helper.ScaleAttributeHelper;
-import fuzs.statuemenus.api.v1.network.client.data.DataSyncHandler;
-import fuzs.statuemenus.api.v1.world.inventory.StatueHolder;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueScreenType;
+import fuzs.statuemenus.common.api.v1.client.gui.screens.StatuePositionScreen;
+import fuzs.statuemenus.common.api.v1.helper.ScaleAttributeHelper;
+import fuzs.statuemenus.common.api.v1.network.client.data.DataSyncHandler;
+import fuzs.statuemenus.common.api.v1.world.inventory.StatueHolder;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueScreenType;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;

@@ -4,13 +4,13 @@ import com.mojang.datafixers.util.Either;
 import com.mojang.datafixers.util.Unit;
 import fuzs.armorstatues.ArmorStatues;
 import fuzs.armorstatues.config.ClientConfig;
-import fuzs.statuemenus.api.v1.helper.ScaleAttributeHelper;
-import fuzs.statuemenus.api.v1.network.client.data.DataSyncHandler;
-import fuzs.statuemenus.api.v1.world.inventory.StatueHolder;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueAlignment;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatuePose;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueScreenType;
-import fuzs.statuemenus.api.v1.world.inventory.data.StatueStyleOption;
+import fuzs.statuemenus.common.api.v1.helper.ScaleAttributeHelper;
+import fuzs.statuemenus.common.api.v1.network.client.data.DataSyncHandler;
+import fuzs.statuemenus.common.api.v1.world.inventory.StatueHolder;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueAlignment;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatuePose;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueScreenType;
+import fuzs.statuemenus.common.api.v1.world.inventory.data.StatueStyleOption;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.nbt.*;
@@ -241,9 +241,9 @@ public class CommandDataSyncHandler implements DataSyncHandler {
     }
 
     protected void sendDisplayMessage(Component component, boolean failure) {
-        this.player.displayClientMessage(Component.empty()
+        this.player.sendSystemMessage(Component.empty()
                 .append(component)
-                .withStyle(failure ? ChatFormatting.RED : ChatFormatting.GREEN), false);
+                .withStyle(failure ? ChatFormatting.RED : ChatFormatting.GREEN));
     }
 
     private void enqueueEntityData(CompoundTag compoundTag) {

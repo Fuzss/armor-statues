@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "armorstatues",
         "group": "fuzs.armorstatues",
         "name": "Armor Statues",
-        "version": "21.11.1",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -50,7 +51,7 @@
         },
         {
             "name": "github",
-            "slug": "armorstatues"
+            "slug": "armor-statues"
         },
         {
             "name": "modrinth",
