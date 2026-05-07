@@ -3,9 +3,9 @@ plugins {
 }
 
 dependencies {
-    modCompileOnly(libs.puzzleslib.common)
-    modApi(libs.puzzleslib.neoforge)
-    modCompileOnly(libs.statuemenus.common)
-    modApi(libs.statuemenus.neoforge)
-    include(libs.statuemenus.neoforge)
+    modCompileOnly(sharedLibs.puzzleslib.common)
+    modApi(sharedLibs.puzzleslib.neoforge)
+    modCompileOnly(sharedLibs.statuemenus.common)
+    modApi(sharedLibs.statuemenus.neoforge)
+    include(sharedLibs.statuemenus.neoforge)
 }
