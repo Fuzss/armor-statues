@@ -17,7 +17,7 @@ public class DataSyncTickHandler {
     }
 
     public static void onEndClientTick(Minecraft minecraft) {
-        if (minecraft.player != null && !(minecraft.screen instanceof StatueScreen) && dataSyncHandler != null) {
+        if (minecraft.player != null && !(minecraft.gui.screen() instanceof StatueScreen) && dataSyncHandler != null) {
             if (dataSyncHandler.shouldContinueTicking()) {
                 dataSyncHandler.tick();
             } else {

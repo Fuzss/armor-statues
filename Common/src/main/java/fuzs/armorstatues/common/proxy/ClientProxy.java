@@ -24,7 +24,7 @@ public class ClientProxy extends ServerProxy {
                 player.getInventory(),
                 livingEntity.getDisplayName(),
                 createDataSyncHandler(statueHolder, (LocalPlayer) player));
-        Minecraft.getInstance().setScreen(screen);
+        Minecraft.getInstance().gui.setScreen(screen);
     }
 
     private static DataSyncHandler createDataSyncHandler(StatueHolder holder, LocalPlayer player) {

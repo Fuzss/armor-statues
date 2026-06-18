@@ -11,7 +11,7 @@ import fuzs.statuemenus.common.api.v1.world.entity.decoration.StatueEntity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypeIds;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.MenuType;
@@ -21,7 +21,7 @@ import net.minecraft.world.phys.Vec3;
 public class ArmorStandInteractHandler {
 
     public static EventResultHolder<InteractionResult> onUseEntity(Player player, Level level, InteractionHand interactionHand, Entity entity, Vec3 hitVector) {
-        if (entity.getType() == EntityType.ARMOR_STAND && entity instanceof ArmorStand armorStand) {
+        if (entity.is(EntityTypeIds.ARMOR_STAND) && entity instanceof ArmorStand armorStand) {
             boolean clientsideOnly =
                     level.isClientSide() && !NetworkingHelper.isModPresentServerside(ArmorStatues.MOD_ID);
             // the menu won't exist in the registry if the mod is missing serverside since Forge syncs registries to clients
