@@ -6,11 +6,17 @@
     "26.1.x": "maintained",
     "26.2.x": "primary"
   },
-  "properties": {
-    "distributions.curseforge.id": "682566",
-    "distributions.curseforge.slug": "armor-statues",
-    "distributions.github.slug": "armor-statues",
-    "distributions.modrinth.id": "bbGCtEvb",
-    "distributions.modrinth.slug": "armor-statues"
+  "distributions": {
+    "curseforge": {
+      "id": "682566",
+      "slug": "armor-statues"
+    },
+    "github": {
+      "slug": "armor-statues"
+    },
+    "modrinth": {
+      "id": "bbGCtEvb",
+      "slug": "armor-statues"
+    }
   }
 }
