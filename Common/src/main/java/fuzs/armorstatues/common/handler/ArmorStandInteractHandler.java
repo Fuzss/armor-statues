@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityTypeIds;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.item.component.SwingAnimation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
@@ -38,7 +39,7 @@ public class ArmorStandInteractHandler {
                     Proxy.INSTANCE.openStatueScreen(armorStand, statueEntity, player);
                     // required so no packet is sent to server when only installed client-side, so the server doesn't change any equipment when we only want to open the screen
                     // returning InteractionResult.FAIL will miss out on the player arm swing animation, which we manually play here
-                    player.swing(interactionHand);
+                    player.swing(interactionHand, SwingAnimation.DEFAULT, false);
                     return EventResultHolder.interrupt(InteractionResult.FAIL);
                 } else {
                     return EventResultHolder.interrupt(interactionResult);
